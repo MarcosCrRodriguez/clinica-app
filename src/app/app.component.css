@@ -1,0 +1,195 @@
+.pp {
+  background: url("./../../src/assets/treatment-bg.jpg") no-repeat center fixed;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #36639b;
+  border-bottom: 4px solid #a9a9a9;
+}
+
+.menu-img img {
+  max-width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.title-app {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  transition: 0.6s;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: calc(100vh - 20px);
+  background-color: #36639b;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.menu-container.open {
+  right: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  background-color: #283a85;
+  border-radius: 4px;
+}
+
+.footer-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #36639b;
+  min-height: 18vh;
+}
+
+footer {
+  border-top: 4px solid #a9a9a9;
+  color: white;
+}
+
+.title-footer {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 64px;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  transition: 0.6s;
+}
+
+.footer-left {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 16%;
+}
+
+.footer-left p {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.footer-left i {
+  margin-left: 10px;
+  margin-right: 20px;
+  color: white;
+  transition: 0.4s;
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 16%;
+}
+
+.footer-links li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-left,
+.footer-right {
+  font-size: 26px;
+  font-size: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.nav-mob-open,
+.nav-mob-close {
+  cursor: pointer;
+}
+
+.title-app:hover,
+.title-footer:hover {
+  color: #3bb85b;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  transition: 0.5s;
+}
+
+.footer-left i:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.footer-links li:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    background-color: #36639b;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+  }
+
+  .title-footer {
+    display: none;
+  }
+}

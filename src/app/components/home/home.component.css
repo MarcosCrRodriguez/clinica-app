@@ -1,0 +1,52 @@
+.card {
+  max-width: 700px;
+  padding: 20px;
+  border: 2px solid #000;
+  font-family: "Nunito", sans-serif;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 254, 254, 0.1);
+  text-align: center;
+  margin: 260px auto;
+}
+
+.card h1 {
+  color: #fff;
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 46px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 15px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768) {
+  .card {
+    margin: 200px auto;
+  }
+
+  .card h1 {
+    font-size: 36px;
+  }
+}

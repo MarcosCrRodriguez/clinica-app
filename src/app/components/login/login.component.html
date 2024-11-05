@@ -1,0 +1,80 @@
+<div class="img-login">
+  <div class="login">
+    <div class="card text-center">
+      <div class="header-txt">
+        <h1 class="title">
+          {{ title }}
+        </h1>
+      </div>
+      <div *ngIf="showLoadingGif">
+        <div class="bloquear"></div>
+        <div class="notificacion">
+          <img src="assets/carga-login.gif" alt="Cargando..." />
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="login-input">
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-user-tie"></i
+            ></span>
+            <input
+              type="text"
+              id="inputUser"
+              class="form-control"
+              placeholder="{{ txtPrimero }}"
+              [(ngModel)]="userIngresado"
+              autocomplete="off"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <!-- <input
+            type="email"
+            id="inputUser"
+            class="form-control"
+            placeholder="{{ txtPrimero }}"
+            [(ngModel)]="userIngresado"
+            autocomplete="off"
+          /> -->
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-key"></i
+            ></span>
+            <input
+              type="password"
+              id="inputPass"
+              class="form-control"
+              placeholder="{{ txtSegundo }}"
+              [(ngModel)]="claveIngresado"
+              autocomplete="off"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <!-- <input
+            type="password"
+            id="inputPass"
+            class="form-control"
+            aria-describedby="passwordHelpBlock"
+            placeholder="{{ txtSegundo }}"
+            [(ngModel)]="claveIngresado"
+            autocomplete="off"
+          /> -->
+        </div>
+        <div class="login-btn">
+          <button type="button" class="btn btn-light">
+            <!-- (click)="login()" -->
+            Ingresar <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="register-info">
+        <p>
+          Si no estas registrado con una cuenta, entra
+          <a (click)="registro()">aquí</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
